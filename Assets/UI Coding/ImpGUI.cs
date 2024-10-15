@@ -9,6 +9,30 @@ public class UI : MonoBehaviour
     public string labelText = " ";
     private GUIStyle labelStyle;
 
+    private int attackP1 = 100;
+    private int attackP2 = 55;
+    private int attackP3 = 30;
+
+    private int defenseP1 = 50;
+    private int defenseP2 = 50;
+    private int defenseP3 = 50;
+    
+    private int SpeedP1 = 32;
+    private int SpeedP2 = 30;
+    private int SpeedP3 = 13;
+
+    private int LuckP1 = 62;
+    private int LuckP2 = 75;
+    private int LuckP3 = 48;
+
+    private int IntelligenceP1 = 88;
+    private int IntelligenceP2 = 118;
+    private int IntelligenceP3 = 83;
+
+    private int SpecialP1 = 2;
+    private int SpecialP2 = 3;
+    private int SpecialP3 = 1;
+
     private void Start()
     {
         labelStyle = new GUIStyle();
@@ -21,15 +45,15 @@ public class UI : MonoBehaviour
 
         if (GUI.Button(new Rect(200, 40, 100, 40), "Player 1"))
         {
-            labelText = "Name: Brylle \n\rAttack: 100 \n\rDefence: 50\n\rSpeed: 32\n\rLuck: 62\n\rIntelligence: 88\n\rSpecial: 2";
+            labelText = "Name: Brylle \n\rAttack: " + attackP1 + "\n\rDefense:" + defenseP1 + "\n\rSpeed: " + SpeedP1 + "\n\rLuck: " + LuckP1 + "\n\rIntelligence: " + IntelligenceP1 + "\n\rSpecial: " + SpecialP1 ;
         }
         if (GUI.Button(new Rect(200, 120, 100, 40), "Player 2"))
         {
-            labelText = "Name: Hamilton \n\rAttack: 55 \n\rDefence: 50\n\rSpeed: 30\n\rLuck: 75\n\rIntelligence: 118\n\rSpecial: 3";
+            labelText = "Name: Alexis \n\rAttack: " + attackP2 + "\n\rDefense:" + defenseP2 + "\n\rSpeed: " + SpeedP2 + "\n\rLuck: " + LuckP2 + "\n\rIntelligence: " + IntelligenceP2 + "\n\rSpecial: " + SpecialP2;
         }
         if (GUI.Button(new Rect(200, 200, 100, 40), "Player 3"))
         {
-            labelText = "Name: Zack \n\rAttack: 30 \n\rDefence: 50\n\rSpeed: 13\n\rLuck: 48\n\rIntelligence: 83\n\rSpecial: 1";
+            labelText = "Name: Zackery \n\rAttack: " + attackP3 + "\n\rDefense:" + defenseP3 + "\n\rSpeed: " + SpeedP3 + "\n\rLuck: " + LuckP3 + "\n\rIntelligence: " + IntelligenceP3 + "\n\rSpecial: " + SpecialP3;
         }
 
         GUI.Label(new Rect(700, 100, 500, 500), labelText, labelStyle);
